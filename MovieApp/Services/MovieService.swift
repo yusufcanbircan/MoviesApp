@@ -7,11 +7,11 @@
 
 import Foundation
 
-class MovieService {
+final class MovieService {
     
-    func getMovies(completion: @escaping ([MovieResult]?) -> (Void)) {
+    func downloadMovies(page: Int, completion: @escaping ([MovieResult]?) -> (Void)) {
         
-        guard let url = URL(string: NetworkConstants.movies(page: 1))
+        guard let url = URL(string: NetworkConstants.movies(page: page))
         else { return }
         
         NetworkManager.shared.download(url: url) { [weak self] result in

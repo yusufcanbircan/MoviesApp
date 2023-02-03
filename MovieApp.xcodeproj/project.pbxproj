@@ -22,6 +22,13 @@
 		BB8017CD298C419800A8D0D7 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017CC298C419800A8D0D7 /* NetworkConstants.swift */; };
 		BB8017CF298C43ED00A8D0D7 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017CE298C43ED00A8D0D7 /* Movies.swift */; };
 		BB8017D1298C447800A8D0D7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017D0298C447800A8D0D7 /* MovieService.swift */; };
+		BB8017D3298D4F9800A8D0D7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017D2298D4F9800A8D0D7 /* HomeViewModel.swift */; };
+		BB8017D6298D623E00A8D0D7 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017D5298D623E00A8D0D7 /* UIView + Extension.swift */; };
+		BB8017D8298D633900A8D0D7 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017D7298D633900A8D0D7 /* UIHelper.swift */; };
+		BB8017DA298D639800A8D0D7 /* CGFloat + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017D9298D639800A8D0D7 /* CGFloat + Extension.swift */; };
+		BB8017DC298D6AB800A8D0D7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017DB298D6AB800A8D0D7 /* MovieCell.swift */; };
+		BB8017E0298D7A0700A8D0D7 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017DF298D7A0700A8D0D7 /* PosterImageView.swift */; };
+		BB8017E2298DA01700A8D0D7 /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		BB8017CC298C419800A8D0D7 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		BB8017CE298C43ED00A8D0D7 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		BB8017D0298C447800A8D0D7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		BB8017D2298D4F9800A8D0D7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BB8017D5298D623E00A8D0D7 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		BB8017D7298D633900A8D0D7 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		BB8017D9298D639800A8D0D7 /* CGFloat + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat + Extension.swift"; sourceTree = "<group>"; };
+		BB8017DB298D6AB800A8D0D7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		BB8017DF298D7A0700A8D0D7 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,7 @@
 		BB44DE58298BDCF80039C601 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB8017D4298D622C00A8D0D7 /* Extensions */,
 				BB44DE93298BE5F30039C601 /* Utilities */,
 				BB44DE95298BE6060039C601 /* Services */,
 				BB44DE94298BE5FA0039C601 /* Models */,
@@ -145,8 +160,8 @@
 		BB44DE92298BE5EB0039C601 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BB44DE97298BE61A0039C601 /* HomeViewController */,
 				BB44DE96298BE60D0039C601 /* Components */,
+				BB44DE97298BE61A0039C601 /* HomeViewController */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -156,6 +171,7 @@
 			children = (
 				BB44DE9A298BEA9A0039C601 /* NetworkManager.swift */,
 				BB8017CC298C419800A8D0D7 /* NetworkConstants.swift */,
+				BB8017D7298D633900A8D0D7 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -179,6 +195,8 @@
 		BB44DE96298BE60D0039C601 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BB8017DB298D6AB800A8D0D7 /* MovieCell.swift */,
+				BB8017DF298D7A0700A8D0D7 /* PosterImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,8 +205,19 @@
 			isa = PBXGroup;
 			children = (
 				BB44DE98298BE62C0039C601 /* HomeViewController.swift */,
+				BB8017D2298D4F9800A8D0D7 /* HomeViewModel.swift */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		BB8017D4298D622C00A8D0D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB8017D5298D623E00A8D0D7 /* UIView + Extension.swift */,
+				BB8017D9298D639800A8D0D7 /* CGFloat + Extension.swift */,
+				BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,13 +358,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8017E2298DA01700A8D0D7 /* UICollectionView + Extension.swift in Sources */,
+				BB8017DC298D6AB800A8D0D7 /* MovieCell.swift in Sources */,
+				BB8017DA298D639800A8D0D7 /* CGFloat + Extension.swift in Sources */,
 				BB8017CF298C43ED00A8D0D7 /* Movies.swift in Sources */,
+				BB8017D3298D4F9800A8D0D7 /* HomeViewModel.swift in Sources */,
 				BB8017CD298C419800A8D0D7 /* NetworkConstants.swift in Sources */,
+				BB8017E0298D7A0700A8D0D7 /* PosterImageView.swift in Sources */,
+				BB8017D8298D633900A8D0D7 /* UIHelper.swift in Sources */,
 				BB44DE5A298BDCF80039C601 /* AppDelegate.swift in Sources */,
 				BB44DE64298BDCF80039C601 /* MovieApp.xcdatamodeld in Sources */,
 				BB44DE9B298BEA9A0039C601 /* NetworkManager.swift in Sources */,
 				BB44DE5C298BDCF80039C601 /* SceneDelegate.swift in Sources */,
 				BB8017D1298C447800A8D0D7 /* MovieService.swift in Sources */,
+				BB8017D6298D623E00A8D0D7 /* UIView + Extension.swift in Sources */,
 				BB44DE99298BE62C0039C601 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

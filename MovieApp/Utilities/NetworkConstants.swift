@@ -11,6 +11,10 @@ enum NetworkConstants {
     static func movies(page: Int) -> String {
         "https://api.themoviedb.org/3/movie/popular?api_key=7b400cff187082086146992ec3d11201&language=en-US&page=\(page)"
     }
+    
+    static func imageURL(path: String) -> String {
+        "https://image.tmdb.org/t/p/w500\(path)"
+    }
 }
 
 /*class NetworkConstants {
