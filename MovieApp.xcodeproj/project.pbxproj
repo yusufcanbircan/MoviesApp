@@ -29,6 +29,8 @@
 		BB8017DC298D6AB800A8D0D7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017DB298D6AB800A8D0D7 /* MovieCell.swift */; };
 		BB8017E0298D7A0700A8D0D7 /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017DF298D7A0700A8D0D7 /* PosterImageView.swift */; };
 		BB8017E2298DA01700A8D0D7 /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */; };
+		BB8017E5298E58BD00A8D0D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017E4298E58BD00A8D0D7 /* DetailViewController.swift */; };
+		BB8017E7298E5DBE00A8D0D7 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8017E6298E5DBE00A8D0D7 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		BB8017DB298D6AB800A8D0D7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BB8017DF298D7A0700A8D0D7 /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
 		BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
+		BB8017E4298E58BD00A8D0D7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB8017E6298E5DBE00A8D0D7 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 			children = (
 				BB44DE96298BE60D0039C601 /* Components */,
 				BB44DE97298BE61A0039C601 /* HomeViewController */,
+				BB8017E3298E589B00A8D0D7 /* DetailViewController */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -218,6 +223,15 @@
 				BB8017E1298DA01700A8D0D7 /* UICollectionView + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB8017E3298E589B00A8D0D7 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB8017E4298E58BD00A8D0D7 /* DetailViewController.swift */,
+				BB8017E6298E5DBE00A8D0D7 /* DetailViewModel.swift */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8017E7298E5DBE00A8D0D7 /* DetailViewModel.swift in Sources */,
 				BB8017E2298DA01700A8D0D7 /* UICollectionView + Extension.swift in Sources */,
 				BB8017DC298D6AB800A8D0D7 /* MovieCell.swift in Sources */,
 				BB8017DA298D639800A8D0D7 /* CGFloat + Extension.swift in Sources */,
@@ -365,6 +380,7 @@
 				BB8017D3298D4F9800A8D0D7 /* HomeViewModel.swift in Sources */,
 				BB8017CD298C419800A8D0D7 /* NetworkConstants.swift in Sources */,
 				BB8017E0298D7A0700A8D0D7 /* PosterImageView.swift in Sources */,
+				BB8017E5298E58BD00A8D0D7 /* DetailViewController.swift in Sources */,
 				BB8017D8298D633900A8D0D7 /* UIHelper.swift in Sources */,
 				BB44DE5A298BDCF80039C601 /* AppDelegate.swift in Sources */,
 				BB44DE64298BDCF80039C601 /* MovieApp.xcdatamodeld in Sources */,

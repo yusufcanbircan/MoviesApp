@@ -38,4 +38,12 @@ extension HomeViewModel: HomeViewModelInterfaceProtocol {
             self.view?.reloadCollectionView()
         }
     }
+    
+    func getDetail(id: Int) {
+        service.downloadDetail(id: id) { [weak self] returnedDetail in
+            guard let self = self, let returnedDetail = returnedDetail else { return }
+            
+            self.view?.navigateToDetailViewController(movie: returnedDetail)
+        }
+    }
 }

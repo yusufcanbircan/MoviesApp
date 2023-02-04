@@ -11,6 +11,7 @@ protocol HomeViewInterfaceProtocol: AnyObject {
     func configureView()
     func configureCollectionView()
     func reloadCollectionView()
+    func navigateToDetailViewController(movie: MovieResult)
 }
 
 final class HomeViewController: UIViewController {
@@ -45,10 +46,17 @@ extension HomeViewController: HomeViewInterfaceProtocol {
     
     func configureView() {
         view.backgroundColor = .systemBackground
+        title = "Popular Movies"
     }
     
     func reloadCollectionView() {
         collectionView.reloadOnMainThread()
+    }
+    
+    func navigateToDetailViewController(movie: MovieResult) {
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(DetailViewController(movie: movie), animated: true)
+        }
     }
 }
 
@@ -63,6 +71,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.setCell(movie: viewModel.movies[indexPath.item])
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.getDetail(id: viewModel.movies[indexPath.item].id ?? Int.min)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
